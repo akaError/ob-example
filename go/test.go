@@ -5,7 +5,7 @@ import (
     "fmt"
     "log"
     
-    _ "oceanbase/mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
+    _ "mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
 )
 
 type City struct {
@@ -19,7 +19,7 @@ func main() {
     }
 
 func select_all() {
-    conn := "root:@tcp(127.0.0.1:34905)/test"
+    conn := "root:@tcp(127.0.0.1:2881)/test"
     db, err := sql.Open("mysql", conn)
     if err != nil {
         log.Fatal(err)
