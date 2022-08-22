@@ -7,7 +7,7 @@ tasks:
     init: docker pull oceanbase/oceanbase-ce
     command: | 
           docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce
-          bash /workspace/tools/scripts/gitpod.sh
+          bash /workspace/ob-example/tools/scripts/gitpod.sh
   - name: DB Server
     command: echo -e "$(< ./tools/scripts/gitpod_welcome)"
     openMode: split-right
