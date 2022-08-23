@@ -6,9 +6,10 @@ tasks:
   - name: deploy
     init: docker pull oceanbase/oceanbase-ce
     command: | 
-          pip3 install pymysql
           docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce
           bash /workspace/ob-example/tools/scripts/gitpod.sh
+          bash /workspace/ob-example/go/go_env.sh
+          bash /workspace/ob-example/python/py_env.sh
           source ~/.profile
   - name: DB Server
     command: echo -e "$(< ./tools/scripts/gitpod_welcome)"
