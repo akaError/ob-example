@@ -5,13 +5,11 @@ import (
     "fmt"
     "log"
     
-    _ "mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
+    _ "go_mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
 )
 
-type City struct {
-    Id         int
+type Str struct {
     Name       string
-    Population int
 }
 
 func main() {
@@ -30,8 +28,9 @@ func select_all() {
     if err != nil {
         log.Fatal(err)
     }
-    
-    res, err := db.Query("SELECT * FROM cities")
+    db.Quert("create datable t1(str varchar(256))") 
+    db.Quert("insert into  t1 values ("hello OceanBase"))") 
+    res, err := db.Query("SELECT * FROM t1")
     if err != nil {
         log.Fatal(err)
     }
@@ -44,13 +43,13 @@ func select_all() {
     
     for res.Next() {
         
-        var city City
-        err := res.Scan(&city.Id, &city.Name, &city.Population)
+        var str Str
+        err := res.Scan(&str.Name)
         
         if err != nil {
             log.Fatal(err)
         }
         
-        fmt.Printf("%v\n", city)
+        fmt.Printf("%v\n", str)
     }
 }
