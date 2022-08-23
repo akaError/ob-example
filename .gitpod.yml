@@ -9,6 +9,7 @@ tasks:
           pip3 install pymysql
           docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce
           bash /workspace/ob-example/tools/scripts/gitpod.sh
+          source ~/.profile
   - name: DB Server
     command: echo -e "$(< ./tools/scripts/gitpod_welcome)"
     openMode: split-right
