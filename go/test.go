@@ -44,6 +44,6 @@ func select_all() {
         
         var str Str
         res.Scan(&str.Name)
-        fmt.Printf("%v\n", str)
+        fmt.Printf("%s\n", str.Name)
     }
 }
