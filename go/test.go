@@ -3,8 +3,7 @@ package main
 import (
     "database/sql"
     "fmt"
-    "log"
-    
+    "log"    
     _ "go_mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
 )
 
@@ -28,8 +27,8 @@ func select_all() {
     if err != nil {
         log.Fatal(err)
     }
-    db.Quert("create datable t1(str varchar(256))") 
-    db.Quert("insert into  t1 values ("hello OceanBase"))") 
+    db.Query("create table t1(str varchar(256))") 
+    db.Query("insert into  t1 values ('Hello OceanBase')") 
     res, err := db.Query("SELECT * FROM t1")
     if err != nil {
         log.Fatal(err)
@@ -44,12 +43,7 @@ func select_all() {
     for res.Next() {
         
         var str Str
-        err := res.Scan(&str.Name)
-        
-        if err != nil {
-            log.Fatal(err)
-        }
-        
+        res.Scan(&str.Name)
         fmt.Printf("%v\n", str)
     }
 }
