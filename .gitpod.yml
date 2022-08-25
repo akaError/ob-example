@@ -13,5 +13,6 @@ tasks:
     command: |
           echo -e "$(< ./tools/scripts/gitpod_welcome)"
           bash /workspace/ob-example/go/go_env.sh
+          bash /workspace/ob-example/go/java_env.sh
           source ~/.profile
     openMode: split-right
