@@ -22,13 +22,10 @@ public class Test {
                 sm.executeUpdate(q2);
                 sm.executeUpdate(q3);                  
                 ResultSet rs = sm.executeQuery(q4);
-                rs.last();
-                int count=rs.getRow();
-                System.out.printf("%d\n",count);
                 rs.beforeFirst();
                 while(rs.next()){
                  String Name = rs.getString("name");
-                 System.out.printf("%s",Name);
+                 System.out.printf("%s\n",Name);
                 }
                 rs.close();
                 } catch (SQLException se) {

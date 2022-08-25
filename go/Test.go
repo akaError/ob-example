@@ -27,6 +27,7 @@ func select_all() {
     if err != nil {
         log.Fatal(err)
     }
+    fmt.Printf("success to connect OceanBase with go_mysql driver")
     db.Query("create table t1(str varchar(256))") 
     db.Query("insert into  t1 values ('Hello OceanBase')") 
     res, err := db.Query("SELECT * FROM t1")
