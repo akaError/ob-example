@@ -16,4 +16,5 @@ tasks:
           bash /workspace/ob-example/go/go_env.sh
           bash /workspace/ob-example/java/java_env.sh
           source ~/.profile
+          cd /workspace/ob-example
     openMode: split-right
