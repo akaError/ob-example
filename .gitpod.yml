@@ -11,10 +11,11 @@ tasks:
           bash /workspace/ob-example/tools/scripts/gitpod.sh
   - name: DB Server
     command: |
-          echo -e "$(< ./tools/scripts/gitpod_welcome)"
           echo "alias example='bash /workspace/ob-example/example.sh' " >> ~/.profile
           bash /workspace/ob-example/go/go_env.sh
           bash /workspace/ob-example/java/java_env.sh
           source ~/.profile
+          clear
+          echo -e "$(< ./tools/scripts/gitpod_welcome)"
           cd /workspace/ob-example
     openMode: split-right
