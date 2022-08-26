@@ -33,8 +33,7 @@ if [ -n "$name" ];then
       python3 /workspace/ob-example/python/Test.py 
     elif [ "$java" == $name ]
     then
-      javac -cp /workspace/ob-example/java/mysql-connector-java-5.1.47.jar  /workspace/ob-example/java/Test.java >> ~/.output
-      java -cp .:/workspace/ob-example/java/mysql-connector-java-5.1.47.jar Test
+      cd /workspace/ob-example/java&&javac -cp ./mysql-connector-java-5.1.47.jar Test.java >> ~/.output&&java -cp .:mysql-connector-java-5.1.47.jar Test
     elif [ $go == $name ]
     then
       go run /workspace/ob-example/go/Test.go
