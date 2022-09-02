@@ -1,5 +1,8 @@
 # ob-example
-Examples for different language with relative components are provided to show connectting Oceanbase. 
+Oceanbase build its online platform for fast use based on gitpod, Clike the button to use
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/akaError/ob-example)
+
+Examples for different language to connect Oceanbase are presented in this repository. Three steps help to have a fast experience. 
 ```
 //1. open 
 cd xxxx
@@ -8,19 +11,15 @@ sh xx_env.sh
 //3. run to query
 sh run.sh
 ```
-Here we use python3-pymysql as example to show
+Here we use python3-pymysql as example and others are the same:
 ```
 cd python3-pymysql
 sh py_env.sh
 sh run.sh
 ```
 
-# Quick start
-Refer to the [Get Started guide](https://open.oceanbase.com/quickStart) to try out OceanBase Database.
-# gitpod
+Refer to the [OceanBase](https://open.oceanbase.com) for more details about OceanBase Database.
 
-Oceanbase build its online platform for fast use based on gitpod, Clike the button
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/akaError/ob-example)
 
 
 
