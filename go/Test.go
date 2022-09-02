@@ -4,7 +4,7 @@ import (
     "database/sql"
     "fmt"
     "log"    
-    _ "go_mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
+    _ "github.com/go-sql-driver/mysql" //填写 go-sql-driver/mysql 安装的准确路径。如果安装在 src 目录下，可以直接填 "mysql"。
 )
 
 type Str struct {
