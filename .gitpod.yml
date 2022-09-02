@@ -10,8 +10,6 @@ tasks:
           bash /workspace/ob-example/tools/scripts/gitpod.sh
   - name: DB Server
     command: |
-          echo "alias sh='/bin/bash'" >> ~/.profile
-          source ~/.profile
           clear
           echo -e "$(< ./tools/scripts/gitpod_welcome)"
           cd /workspace/ob-example
