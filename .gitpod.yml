@@ -6,10 +6,16 @@ tasks:
   - name: deploy
     init: docker pull oceanbase/oceanbase-ce
     command: | 
+          echo "alias sh='/bin/bash'" >> ~/.profile
+          source ~/.profile
+          clear
           docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce
           bash /workspace/ob-example/tools/scripts/gitpod.sh
+          
   - name: DB Server
     command: |
+          echo "alias sh='/bin/bash'" >> ~/.profile
+          source ~/.profile
           clear
           echo -e "$(< ./tools/scripts/gitpod_welcome)"
           cd /workspace/ob-example
