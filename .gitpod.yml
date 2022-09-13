@@ -15,6 +15,7 @@ tasks:
   - name: DB Server
     command: |
           echo "alias sh='/bin/bash'" >> ~/.profile
+          echo "export GOPATH="$gopath"" >> ~/.profile
           source ~/.profile
           clear
           echo -e "$(< ./tools/scripts/gitpod_welcome)"
