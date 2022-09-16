@@ -3,6 +3,7 @@
 本文介绍如何通过 Python 驱动连接 OceanBase 数据库。
 
 ## Python3.x 系列（使用 PyMySQL）
+为了防止环境问题，推荐使用anaconda配置python3.x环境
 
 PyMySQL 是在 Python3.x 版本中用于连接 MySQL 服务器的一个库。
 
