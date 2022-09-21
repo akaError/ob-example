@@ -3,6 +3,8 @@ Oceanbase build its online platform for fast use based on gitpod, Clike the butt
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/akaError/ob-example)
 
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/97499944/191471766-e151310e-6a18-43ad-b6c4-58c48e0fb46e.png">
+
 Examples for different language to connect Oceanbase are presented in this repository. Three steps help to have a fast experience. 
 ```
 //1. open 
