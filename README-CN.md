@@ -1,12 +1,12 @@
 # ob-example
-Oceanbase基于giipod建立了快速在线体验平台, 点击下面按钮一键体验(建议使用chrome浏览器):
+Oceanbase基于gitpod建立了快速在线体验平台, 点击下面按钮一键体验(建议使用chrome浏览器):
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/akaError/ob-example)
 
 进入后会自动部署一个OceanBase本地实例，请等待左边Oceanbase boot Success, 其余操作可在右边终端中操作
 ![示意图](./tools/scripts/gitpod1.png)
 
-仓库中提供了不同语言和工具连接Oceanbase的示例，按下面步骤进行操作
+另外仓库中提供了不同语言和工具连接Oceanbase的示例，按下面步骤进行操作
 ```
 //1. open 
 cd xxxx
