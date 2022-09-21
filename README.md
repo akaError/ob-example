@@ -2,10 +2,11 @@
 Oceanbase build its online platform for fast use based on gitpod, Clike the button to use
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/akaError/ob-example)
-![](https://cn-hangzhou.oss-cdn.aliyun-inc.com/git/force/uploads/comment/292665/34479482796045550/image.png)
 
+OceanBase will auto deploy a local observer. Please wait until see "Oceanbase boot Success" on the left terminal and try to connect in the right.
+![示意图](./tools/scripts/gitpod1.png)
 
-Examples for different language to connect Oceanbase are presented in this repository. Three steps help to have a fast experience. 
+Examples for different language to connect Oceanbase are presented in this repository and those with 'run.sh' can run online. Three steps help to have a fast experience. 
 ```
 //1. open 
 cd xxxx
