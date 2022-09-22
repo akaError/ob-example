@@ -1,6 +1,7 @@
 while (!(docker logs obstandalone | grep -c "boot success!" 1>/dev/null 2>/dev/null))
 do
-    echo "ob is booting..."
+    cur_dateTime="`date +%Y-%m-%d %H:%m:%s`"
+    echo $cur_dateTime" ob is booting..."
     sleep 5s
 done
 echo -e "\033[32m\nob boot success! use following to connect:\033[0m"
