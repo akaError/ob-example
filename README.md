@@ -11,14 +11,14 @@ Examples for different language to connect Oceanbase are presented in this repos
 //1. open 
 cd xxxx
 //2. prepare relative env
-sh xx_env.sh
+sh env.sh
 //3. run to query
 sh run.sh
 ```
 Here we use python3-pymysql as example and others are the same:
 ```
 cd python3-pymysql
-sh py_env.sh
+sh env.sh
 sh run.sh
 ```
 
